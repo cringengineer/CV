@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyacheslav Lysenkov CV</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container ">
+        <main class="main">
+            <div class="left">
+                <section class="up">
+                    <figure class="card">
+                        <img class="my__photo" src="img/cv-photo.jpg" alt="My photo">
+                        <h1 class="my__name">Vyacheslav Lysenkov</h1>
+                    </figure>
+                    <p class="prof">Frontend Developer</p>
+                </section>
+                <section class="down">
+                    <h2 class="contacts">My contacts:</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:cringengineer@gmail.com">
+                                <img class="logo__img" src="img/gmail.svg" alt="my mail">
+                            </a>
+                            <a class="second__link" href="mailto:cringengineer@gmail.com">cringengineer@gmail.com</a>
+                            </li>
+                       <li class="contacts__item">
+                        <a class="contacts__link" href="https://github.com/cringengineer">
+                            <img class="logo__img" src="img/git.svg" alt="my git">
+                        </a>
+                        <a class="second__link" href="https://github.com/cringengineer">cringengineer</a>
+                       </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://telegram.me/cringengineer">
+                                <img class="logo__img" src="img/tg.svg" alt="my telegram">
+                            </a>
+                            <a class="second__link" href="https://telegram.me/cringengineer">cringengineer</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:+375291164369">
+                                <img class="logo__img" src="img/phone.svg" alt="my VK">
+                            </a>
+                            <a class="second__link" href="tel:+375291164369">+375-29-116-43-69</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://vk.com/dungeonlordd">
+                                <img class="logo__img" src="img/vk.svg" alt="my VK">
+                            </a>
+                            <a class="second__link" href="https://vk.com/dungeonlordd">Vyacheslav Lysenkov</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="right">
+                <div class="right__container">
+                    <section class="profile">
+                        <h3 class="profile__title">Profile:</h3>
+                        <p class="regular__text">
+                            I started my path in web development in the summer of 2021. During this time, I learned how to make up websites, apply styles, revitalize them with the help of JS. Now, since i’m taking RS School courses, I can confidently say that they have given the necessary solid theoretical and practical base. At the moment I'm learning typescript. I’m about to start learning React as well.
+                            After learning react, I see myself as a junior developer.
+                        </p>
+                        <p class="regular__text">
+                            I want to get an internship at Innowise Group to gain experience in development and improve my hard skills. I think that this would help me on my way, because I am ready to overcome difficulties, multitask and practice a lot.
+                        </p>
+                        <p class="regular__text">
+                            I would like to get a job in your company, as it can help me gain invaluable experience, meet wonderful people, while I can do what brings me pleasure!
+                        </p>
+                    </section>
+                    <section class="skills">
+                        <h3 class="skills__title">Skills:</h3>
+                        <ul class="my__skills">
+                            <li class="skills__item regular__text">HTML/CSS</li>
+                            <li class="skills__item regular__text">JavaScript</li>
+                            <li class="skills__item regular__text">Basic knowledge of TypeScript</li>
+                            <li class="skills__item regular__text">English - B1</li>
+                        </ul>
+                    </section>
+                    <section class="education">
+                        <h4 class="education__title">Education:</h4>
+                        <div class="education__div">
+                            
+                            <ul class="my__education">
+                                <li class="education__item regular__text">2020-2024 Belarusian State Technological University(chemical engineer-technologist)</li>
+                                <li class="education__item regular__text">2019-2020 Mogilev State Polytechnic College(welder)</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="code__example">
+                        <h5 class="code__title">Code Example:</h5>
+                        <div class="code__text">
+                            <p class="conditions regular__text">
+                                Condition: <br>Find the number of Friday 13th in the given year.
+    
+                                <br>Input: Year in Gregorian calendar as integer.
+                                
+                                <br>Output: Number of Black Fridays in the year as an integer.
+                            </p>
+                            <p class="code">
+                                function unluckyDays(year){<br>
+                                    let daysCount = 0;<br>
+                                    for (i = 0; i < 12; i++) {<br>
+                                      daysCount += new Date(year, i, 13).getDay() === 5 ? 1 : 0;<br>
+                                    }<br>
+                                    return daysCount;<br>
+                                  }<br>
+                              </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="content__footer">
+                <p class="copyright">©2022 by <a class="git__link" href="https://github.com/cringengineer">cringengineer</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
