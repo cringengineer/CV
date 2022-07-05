@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.main {
+    display: flex;
+    box-shadow: -5px -4px 15px -3px #bdaa9c;
+}
+.my__name {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    
+}
+.prof {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    margin-top: 3%;
+    padding-bottom: 5%;
+    
+}
+.contacts__list {
+    max-width: 85%;
+    margin: 0 auto;
+    
+}
+.contacts__list:last-child {
+    padding-bottom: 10%;
+}
+.contacts__item {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.second__link {
+    margin-left: 10%;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #f5f1ee;
+}
+.logo__img {
+    width: 4em;
+}
+.left {
+    flex-basis: 30%;
+}
+.right {
+    background-color:#f5f1ee;
+    flex-basis: 70%;
+}
+.right__container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.regular__text {
+    font-size: 1.1em;
+    font-family: 'Roboto Condensed';
+    line-height: 150%;
+    margin-top: 1%;
+}
+.my__photo {
+    width: 40%;
+    height: 50%;
+    margin: 5% 30% 5% 30%;
+    border-radius: 5%;
+}
+.up {
+    background-color: #e8dcd3;
+}
+.down {
+    background-color: #bdaa9c;
+}
+.contacts {
+    padding-top: 5%;
+    padding-left: 10%;
+    font-size: 2em;
+    color: #f5f1ee;
+    font-family: 'Roboto Slab';
+}
+.profile {
+    margin-top: 2%;
+}
+.profile__title {
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 1%;
+    border-bottom: solid #bdaa9c 1px;
+    color: #bdaa9c;
+}
+.skills {
+    margin-top: 2%;
+    
+}
+.my__skills {
+    list-style-type: disc;
+    margin-left: 2%;
+}
+.skills__title {
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 1%;
+    border-bottom: solid #bdaa9c 1px;
+    color: #bdaa9c;
+}
+.education {
+    margin-top: 2%;
+}
+.education__title {
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 1%;
+    border-bottom: solid #bdaa9c 1px;
+    color: #bdaa9c;
+}
+.code__example {
+    margin-top: 2%;
+}
+.code__title {
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 1%;
+    border-bottom: solid #bdaa9c 1px;
+    color: #bdaa9c;
+}
+.conditions {
+    font-style: italic;
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
+    margin-bottom: 1%;
+}
+.code {
+    background-color: #f5f1ee;
+}
+.code__text {
+    margin-bottom: 5%;
+}
+.footer {
+    background-color: #e0cec1;
+    margin-bottom: 5%;
+}
+.copyright {
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
+    text-decoration: none;
+    padding: 2%;
+    text-align: center;
+}
+.git__link {
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+
+/*adaptive*/
+@media (max-width:1300px) {
+    .down {
+        height: 70vw;
+    }
+}
+@media (max-width:940px) {
+    .main {
+        flex-direction: column;
+    }
+    .contacts__item {
+        flex-direction: column;
+    }
+    .contacts__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+    .logo__img {
+        width: 3em;
+    }
+    .second__link {
+        font-size: 1em;
+    }
+    .contacts {
+        text-align: center;
+        padding-left: 0;
+    }
+    .contacts__list:last-child {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .down {
+        height: 90vw;
+    }
+    .my__name {
+        font-size: 1.5em;
+    }
+    .code__title {
+        font-size: 1.5em;
+    }
+    .skills__title {
+        font-size: 1.5em;
+    }
+    .profile__title {
+        font-size: 1.5em;
+    }
+    .education__title {
+        font-size: 1.5em;
+    }
+    .my__skills {
+        margin-left: 5%;
+    }
+}
