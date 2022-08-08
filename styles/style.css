@@ -229,4 +229,7 @@ html {
   .my__skills {
     margin-left: 5%;
   }
+  .projects__title {
+    font-size: 1.5em;
+  }
 }
