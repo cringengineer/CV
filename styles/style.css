@@ -78,7 +78,7 @@ html {
 }
 .down {
   background-color: #bdaa9c;
-  padding-bottom: 200px;
+  padding-bottom: 635px;
 }
 .contacts {
   padding-top: 5%;
@@ -163,23 +163,40 @@ html {
 .projects__title {
   font-size: 2em;
   font-family: "Roboto Slab";
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   border-bottom: solid #bdaa9c 1px;
   color: #bdaa9c;
 }
 .project__link {
-  font-size: 1.1em;
+  font-size: 2em;
   font-family: "Roboto Condensed";
   line-height: 150%;
   margin-top: 1%;
   color: black;
   text-decoration: none;
 }
-
+.project__photo {
+  width: 15em;
+  height: 10em;
+  transition: .9s;
+  border-radius: 10px;
+}
+.project__photo:hover {
+  transform: scale(1.5);
+}
+.project__item {
+  display: flex;
+  margin-bottom: 3%;
+}
+.project__description {
+  margin-left: 5%;
+  font-size: 1.2em;
+}
 /*adaptive*/
 @media (max-width: 1300px) {
   .down {
     height: 70vw;
+    padding-bottom: 1260px;
   }
 }
 @media (max-width: 940px) {
@@ -210,6 +227,7 @@ html {
   }
   .down {
     height: 90vw;
+    padding-bottom: 350px;
   }
   .my__name {
     font-size: 1.5em;
@@ -230,6 +248,17 @@ html {
     margin-left: 5%;
   }
   .projects__title {
+    font-size: 1.5em;
+  }
+  .project__item {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .project__description {
+    margin-bottom: 3%;
+    font-size: 1.1em;
+  }
+  .project__link {
     font-size: 1.5em;
   }
 }
