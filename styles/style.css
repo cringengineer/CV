@@ -78,7 +78,7 @@ html {
 }
 .down {
   background-color: #bdaa9c;
-  padding-bottom: 635px;
+  padding-bottom: 1000px;
 }
 .contacts {
   padding-top: 5%;
@@ -196,7 +196,7 @@ html {
 @media (max-width: 1300px) {
   .down {
     height: 70vw;
-    padding-bottom: 1260px;
+    padding-bottom: 1550px;
   }
 }
 @media (max-width: 940px) {
